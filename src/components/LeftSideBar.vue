@@ -10,7 +10,7 @@ const toggleLeftSidebar = () => {
 </script>
 
 <template>
-  <aside class="flex flex-row h-svh relative" :class="hideLeftSidebar ? 'w-0' : 'w-[300px]'">
+  <div class="flex flex-row h-svh relative" :class="hideLeftSidebar ? 'w-0' : 'w-[300px]'">
     <div v-if="hideLeftSidebar" @click="toggleLeftSidebar" class="absolute top-1/2 right-[-23px] bg-neutral-900 hover:bg-black cursor-pointer z-10 py-3 px-2 rounded-r-lg">
       <font-awesome-icon :icon="['fas', 'caret-right']" />
     </div>
@@ -83,7 +83,7 @@ const toggleLeftSidebar = () => {
         </div>
       </div>
     </div>
-  </aside>
+  </div>
 </template>
 
 <style scoped>
